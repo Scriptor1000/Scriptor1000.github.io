@@ -1,7 +1,7 @@
 let info = document.getElementById('screen-info')
-updateInfo()
+//updateInfo()
 
-addEventListener("resize", updateInfo);
+//addEventListener("resize", updateInfo);
 
 function updateInfo() {
     let Wwidth = window.innerWidth;
