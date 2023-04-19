@@ -1,0 +1,56 @@
+@import 'headlines.css';
+@import 'info.css';
+@import 'a.css';
+@import 'b.css';
+@import 'c.css';
+@import 'd.css';
+
+:root{
+    --bg: rgb(30, 30, 40);
+    --text: rgb(211, 211, 221);
+    --animation-duration: 1s;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Text', serif;
+    user-select: none;
+    outline: none;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: copy;
+    margin: 0px;
+    width: 100%;
+    height: 1080px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    cursor: default;    
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    --animation-state: paused;
+    --direction: alternate;
+}
+
+.inactive {
+    display: none;
+}
+
+.taked {
+    display: none;
+}

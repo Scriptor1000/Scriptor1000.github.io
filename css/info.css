@@ -1,0 +1,21 @@
+.info {
+    background-color: rgba(248, 100, 100, 0.6);
+    color: floralwhite;
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid rgba(150, 0, 0, 0.75);
+    border-radius: 10px;
+    z-index: 101;
+    cursor: default;
+}
+
+#screen-info {
+    position: absolute;
+    top: 100%;
+    left: 1%;
+}
+
+#screen-close {
+    float: right;
+    cursor: pointer;
+}

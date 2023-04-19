@@ -1,0 +1,36 @@
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+h5 {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 0;
+}
+
+h6 {
+    font-size: 22px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}

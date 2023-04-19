@@ -1,0 +1,57 @@
+#b h1 {
+    width: 100%;
+    margin-top: 20px;
+    animation: b_titel_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+#b h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: b_subtitle_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes b_subtitle_in {
+    0% {transform: translate(-50%,-250px);opacity: 0;}
+    100% {transform: translate(-50%,-50%);opacity: 1;}
+}
+
+#b #wrapper{
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    animation: b_wrapper_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+
+@keyframes b_wrapper_in {
+    0% {transform: translateY(250%);opacity: 0;}
+    100% {transform: translateY(-50%);opacity: 1;}
+}
+
+#b .punkt {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+}
+
+#b .img-wrapper {
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#b img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
