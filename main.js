@@ -1,7 +1,7 @@
 let storage = document.getElementById('storage');
 
 let START = 'a'.charCodeAt(0);
-let STOP = 'd'.charCodeAt(0);
+let STOP = 'b'.charCodeAt(0);
 
 document.addEventListener('keydown', (e) => {
     if (storage.getAttribute('running_start') != 'false') return;
