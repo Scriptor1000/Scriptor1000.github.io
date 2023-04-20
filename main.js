@@ -1,7 +1,7 @@
 let storage = document.getElementById('storage');
 
 let START = 'a'.charCodeAt(0);
-let STOP = 'b'.charCodeAt(0);
+let STOP = 'g'.charCodeAt(0);
 
 document.addEventListener('keydown', (e) => {
     if (storage.getAttribute('running_start') != 'false') return;
@@ -15,7 +15,15 @@ document.addEventListener('keydown', (e) => {
         storage.setAttribute('running_start', 'forwards');
         storage.setAttribute('running_end', 'forwards');
         forward(storage.getAttribute('page'))
+    } else if (e.code === 'Space') {
+        if (document.documentElement.style.getPropertyValue('--cursor') == 'default') {
+            document.documentElement.style.setProperty('--cursor', 'none');
+        } else {
+            document.documentElement.style.setProperty('--cursor', 'default');
+        }
+
     }
+    console.log(e.code);
 });
 
 function oneTimeListener(node, type, callback) {

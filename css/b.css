@@ -8,28 +8,55 @@
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     animation: b_subtitle_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
 }
 
 @keyframes b_subtitle_in {
-    0% {transform: translate(-50%,-250px);opacity: 0;}
-    100% {transform: translate(-50%,-50%);opacity: 1;}
+    0% {
+        transform: translate(-50%, -250px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 
-#b #wrapper{
+@keyframes b_subtitle_out {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-300%, -50%);
+        opacity: 0;
+    }
+}
+
+#b #wrapper {
     position: absolute;
-    
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    animation: b_wrapper_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
 }
 
+#vormärz {
+    animation: b_punkt_in var(--animation-state) var(--animation-duration) 0.1s ease-in-out var(--direction) infinite both;
+}
 
-@keyframes b_wrapper_in {
-    0% {transform: translateY(250%);opacity: 0;}
-    100% {transform: translateY(-50%);opacity: 1;}
+#weber {
+    animation: b_punkt_in var(--animation-state) var(--animation-duration) 0.2s ease-in-out var(--direction) infinite both;
+}
+
+#karl {
+    animation: b_punkt_in var(--animation-state) var(--animation-duration) 0.3s ease-in-out var(--direction) infinite both;
+}
+
+#jahr {
+    animation: b_punkt_in var(--animation-state) var(--animation-duration) 0.4s ease-in-out var(--direction) infinite both;
 }
 
 #b .punkt {
@@ -37,8 +64,32 @@
     width: 400px;
     height: 400px;
     margin-right: 20px;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: var(--bg-box);
     border-radius: 20px;
+}
+
+@keyframes b_punkt_in {
+    0% {
+        transform: translateY(250%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes b_punkt_out {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-250%);
+        opacity: 0;
+    }
 }
 
 #b .img-wrapper {
@@ -53,5 +104,3 @@
     height: 100%;
     border-radius: 20px;
 }
-
-

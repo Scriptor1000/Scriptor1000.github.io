@@ -27,6 +27,8 @@ h5 {
 
 h6 {
     font-size: 22px;
+    text-decoration: none;
+    font-weight: normal;
     margin: 0;
 }
 

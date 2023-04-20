@@ -1,0 +1,154 @@
+#g h1 {
+    margin-top: 20px;
+}
+
+#g h2 {
+    animation: g_subtitle_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes g_subtitle_in {
+    0% {
+        transform: rotateY(-90deg);
+    }
+
+    50% {
+        transform: rotateY(-90deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes g_subtitle_out {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: rotateY(-90deg);
+    }
+
+    100% {
+        transform: rotateY(-90deg);
+    }
+}
+
+#g #center {
+    position: absolute;
+    top: calc(50% + 82px);
+    height: 820px;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#g #img {
+    height: 750px;
+    width: 750px;
+    object-fit: cover;
+    display: inline-block;
+    left: 10px;
+    position: absolute;
+    animation: g_img_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+#g #img_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+@keyframes g_img_in {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    50% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes g_img_out {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(90deg)
+    }
+}
+
+#g #infoFried {
+    height: 750px;
+    display: inline-block;
+    left: 800px;
+    width: 1000px;
+    position: absolute;
+    animation: g_info_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes g_info_in {
+    0% {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes g_info_out {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+
+
+#g #dates {
+    background-color: var(--bg-box);
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+#g .date {
+    display: inline-block;
+}
+
+#g #birth {
+    float: left;
+    margin-left: 30px;
+}
+
+#g #death {
+    float: right;
+    margin-right: 30px;
+}
+
+#g #keys {
+    background-color: var(--bg-box);
+    width: 100%;
+    height: 630px;
+    padding: 10px;
+    border-radius: 30px;
+}

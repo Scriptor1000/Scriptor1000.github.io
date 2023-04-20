@@ -1,7 +1,7 @@
 let info = document.getElementById('screen-info')
-//updateInfo()
 
-//addEventListener("resize", updateInfo);
+updateInfo()
+addEventListener("resize", updateInfo);
 
 function updateInfo() {
     let Wwidth = window.innerWidth;
@@ -48,8 +48,8 @@ function disapear_info() {
         iterations: 1,
         fill: 'forwards',
         easing: 'ease'
-    }).onfinish(() => {
+    }).onfinish = () => {
         info.setAttribute('visible', 'shown')
-    })
+    };
 
 }

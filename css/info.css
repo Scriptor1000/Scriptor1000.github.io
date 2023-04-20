@@ -6,11 +6,12 @@
     border: 2px solid rgba(150, 0, 0, 0.75);
     border-radius: 10px;
     z-index: 101;
-    cursor: default;
+    cursor: var(--cursor);
 }
 
 #screen-info {
     position: absolute;
+
     top: 100%;
     left: 1%;
 }
