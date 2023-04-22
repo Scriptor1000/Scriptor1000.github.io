@@ -1,0 +1,107 @@
+#j {
+    z-index: 3;
+    cursor: auto;
+}
+
+#j h1 {
+    margin-top: 20px;
+    animation: j_title_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes j_title_in {
+    0% {
+        transform: rotateY(-90deg);
+    }
+
+    50% {
+        transform: rotateY(-90deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+#j #img_source {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 500px;
+    height: calc(100% - 150px);
+    overflow: hidden;
+    border-radius: 30px;
+    animation: j_img_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes j_img_in {
+    0% {
+        transform: translateX(-520px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+#j #img_source .img {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--bg-box);
+    border-radius: 20px;
+}
+
+#j a {
+    font-size: 30px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+#j #img_source .img_wrapper {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#j #img_source .img_img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#j #img_source #wrapper {
+    animation: j_scroll 30s linear calc(var(--animation-duration) * 2) infinite;
+}
+
+#j #img_source #trailing {
+    height: 1000px;
+}
+
+@keyframes j_scroll {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: translateY(calc(-100% + 1000px));
+    }
+}
+
+#j #sources {
+    position: absolute;
+    left: 550px;
+    top: 100px;
+    width: calc(100% - 600px);
+    height: calc(100% - 150px);
+    border-radius: 30px;
+    background-color: var(--bg-box);
+    animation: j_sources_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+}
+
+@keyframes j_sources_in {
+    0% {
+        transform: translateY(1000px);
+    }
+
+    100% {
+        transform: none;
+    }
+}

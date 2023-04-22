@@ -1,12 +1,15 @@
 @import 'headlines.css';
 @import 'info.css';
-@import 'a.css';
-@import 'b.css';
-@import 'c.css';
-@import 'd.css';
-@import 'e.css';
-@import 'f.css';
-@import 'g.css';
+@import 'pages/a.css';
+@import 'pages/b.css';
+@import 'pages/c.css';
+@import 'pages/d.css';
+@import 'pages/e.css';
+@import 'pages/f.css';
+@import 'pages/g.css';
+@import 'pages/h.css';
+@import 'pages/i.css';
+@import 'pages/j.css';
 
 :root {
     --bg: rgb(30, 30, 40);
@@ -38,7 +41,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 1;
     cursor: var(--cursor);
 }
 
@@ -58,4 +61,8 @@ body {
 
 .taked {
     visibility: hidden;
+}
+
+li {
+    margin-bottom: 20px;
 }
