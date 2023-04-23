@@ -48,13 +48,13 @@
 #i #center {
     position: absolute;
     top: calc(50% + 82px);
+    left: 50%;
     height: 820px;
-    transform: translateY(-50%);
-    width: 100%;
+    transform: translate(calc(-50% - 400px), -50%);
 }
 
 #i #left {
-    position: absolute;
+    display: inline-block;
     width: 535px;
     height: 750px;
     margin-left: 50px;
@@ -133,14 +133,16 @@
 }
 
 #i #keys {
+    display: inline-block;
     position: absolute;
     left: 625px;
-    width: calc(100% - 695px);
+    width: 800px;
     height: 730px;
     background-color: var(--bg-box);
     border-radius: 20px;
     padding: 10px;
     animation: i_keys_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
+    overflow-y: auto;
 }
 
 @keyframes i_keys_in {
@@ -161,4 +163,8 @@
     100% {
         transform: translateY(-1000px);
     }
+}
+
+#i q {
+    font-size: 31px;
 }

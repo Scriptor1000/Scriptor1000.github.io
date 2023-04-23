@@ -105,4 +105,5 @@
     height: calc(100% - 265px);
     padding: 10px;
     border-radius: 30px;
+    overflow-x: auto;
 }

@@ -61,12 +61,12 @@
     position: absolute;
     animation: e_keys_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
     height: 800px;
-    width: 700px;
+    width: calc(100% - 1200px);
     background-color: var(--bg-box);
     display: inline-block;
     padding: 10px;
     border-radius: 30px;
-
+    overflow-y: auto;
 }
 
 #e #keys li {

@@ -25,6 +25,10 @@ h5 {
     margin: 0;
 }
 
+li h5 {
+    font-size: 40px;
+}
+
 h6 {
     font-size: 22px;
     text-decoration: none;

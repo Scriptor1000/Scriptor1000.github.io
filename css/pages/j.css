@@ -73,6 +73,7 @@
 
 #j #img_source #trailing {
     height: 1000px;
+    overflow: hidden;
 }
 
 @keyframes j_scroll {

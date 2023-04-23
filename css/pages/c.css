@@ -52,6 +52,7 @@
     padding: 10px;
     border-radius: 10px;
     margin-right: 30px;
+    overflow-y: auto;
 }
 
 @keyframes c_keys_in {
@@ -79,12 +80,15 @@
     }
 }
 
+#c #keys ul {
+    margin-top: 40px;
+}
+
 #c #keys li {
     margin-bottom: 20px;
 }
 
 #c #side {
-
     display: inline-block;
     position: absolute;
     height: 100%;
