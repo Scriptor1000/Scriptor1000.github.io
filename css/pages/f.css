@@ -153,3 +153,7 @@
     border-radius: 30px;
     overflow-y: auto;
 }
+
+#f li {
+    margin-bottom: 15px;
+}

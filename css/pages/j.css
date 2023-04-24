@@ -91,7 +91,7 @@
     left: 550px;
     top: 100px;
     width: calc(100% - 600px);
-    height: calc(100% - 150px);
+    height: 252px;
     border-radius: 30px;
     background-color: var(--bg-box);
     animation: j_sources_in var(--animation-state) var(--animation-duration) ease-in-out var(--direction) infinite both;
